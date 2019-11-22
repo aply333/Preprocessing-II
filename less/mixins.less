@@ -7,11 +7,9 @@
     border-radius:15px ;
     justify-content: space-around;
     align-items: center;
-    & hover {
-        text-decoration: dotted;
-        background-color:darken(@button-bg,10%);
-    }
     a{
+        margin-left: 1rem;
+        margin-right:2rem;
         font-size: @btn-fnt-sz;
         text-decoration: none;
         color: @btn-fnt-clr;
@@ -19,6 +17,14 @@
 }
 
 .mbl-cont{
-    width:100%;
+    width:auto;
     flex-flow:column;
+}
+
+.darker-font{
+    color: darken(@font-color, 10%)
+}
+
+.darker-bk{
+    background-color: darken(@holder,@per);
 }

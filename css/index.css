@@ -7,17 +7,15 @@
   justify-content: space-around;
   align-items: center;
 }
-.bot-btn hover {
-  text-decoration: dotted;
-  background-color: #117a8b;
-}
 .bot-btn a {
+  margin-left: 1rem;
+  margin-right: 2rem;
   font-size: 2rem;
   text-decoration: none;
   color: #FFEBCD;
 }
 .mbl-cont {
-  width: 100%;
+  width: auto;
   flex-flow: column;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -204,22 +202,27 @@ header .header-cont {
   justify-content: space-between;
 }
 header .header-cont nav {
-  width: 30%;
+  width: 300px;
   display: flex;
-  justify-content: space-around;
+  flex-flow: row;
+  justify-content: space-between;
 }
 header .header-cont nav a {
+  justify-content: space-around;
   color: black;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 @media (max-width:500px) {
   header {
-    width: 100%;
+    width: auto;
     flex-flow: column;
   }
   header .header-cont {
     flex-flow: column;
+  }
+  header .header-cont nav {
+    width: 100%;
   }
 }
 .footer {
@@ -232,6 +235,13 @@ header .header-cont nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .top-section {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .top-section img {
+  margin-bottom: 2rem;
 }
 .home .content-section {
   margin: 30px 0;
@@ -249,10 +259,6 @@ header .header-cont nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
-}
-.home .top-section {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -292,11 +298,9 @@ header .header-cont nav a {
   justify-content: space-around;
   align-items: center;
 }
-.home .content-pick .destination .btn hover {
-  text-decoration: dotted;
-  background-color: #117a8b;
-}
 .home .content-pick .destination .btn a {
+  margin-left: 1rem;
+  margin-right: 2rem;
   font-size: 2rem;
   text-decoration: none;
   color: #FFEBCD;
@@ -304,6 +308,7 @@ header .header-cont nav a {
 @media (max-width:500px) {
   .home {
     width: auto;
+    flex-flow: column;
     margin: 1rem 10% 0 10%;
   }
   .home .content-section {
