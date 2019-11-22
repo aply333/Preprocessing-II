@@ -1,1 +1,24 @@
 // Mixins in here
+.bot-btn{
+    display:flex;
+    width: 85%;
+    height:3.5rem;
+    background-color:@button-bg;
+    border-radius:15px ;
+    justify-content: space-around;
+    align-items: center;
+    & hover {
+        text-decoration: dotted;
+        background-color:darken(@button-bg,10%);
+    }
+    a{
+        font-size: @btn-fnt-sz;
+        text-decoration: none;
+        color: @btn-fnt-clr;
+    }
+}
+
+.mbl-cont{
+    width:100%;
+    flex-flow:column;
+}
