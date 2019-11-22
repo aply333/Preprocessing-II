@@ -1,1 +1,30 @@
 // Mixins in here
+.bot-btn{
+    display:flex;
+    width: 85%;
+    height:3.5rem;
+    background-color:@button-bg;
+    border-radius:15px ;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        margin-left: 1rem;
+        margin-right:2rem;
+        font-size: @btn-fnt-sz;
+        text-decoration: none;
+        color: @btn-fnt-clr;
+    }
+}
+
+.mbl-cont{
+    width:auto;
+    flex-flow:column;
+}
+
+.darker-font{
+    color: darken(@font-color, 10%)
+}
+
+.darker-bk{
+    background-color: darken(@holder,@per);
+}
